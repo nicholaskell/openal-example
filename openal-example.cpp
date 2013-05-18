@@ -28,10 +28,7 @@ int main(int argc, char **argv)
 	ALfloat listenerOri[] = { 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f };
 	ALCenum error;
 	ALint source_state;
-	
-	enumeration = alcIsExtensionPresent(NULL, "ALC_ENUMERATION_EXT");
-	if (enumeration == AL_FALSE)
-		std::cerr << "enumeration extension not available" << std::endl;
+
 
 	if (!defaultDeviceName)
 		defaultDeviceName = alcGetString(NULL, ALC_DEFAULT_DEVICE_SPECIFIER);
