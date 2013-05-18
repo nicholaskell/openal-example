@@ -1,0 +1,20 @@
+OGG streaming from file to OpenAL. 
+Retrieved from http://devmaster.net/posts/2895/openal-lesson-8-oggvorbis-streaming-using-the-source-queue May 18th 2013 by Mark Hutcheson
+
+Slight modifications to remove ALUT dependencies by Mark Hutcheson, May 2013
+
+Original README follows:
+
+
+Lessions 1-8 by Jesse Maurais - jesse_maurais@hotmail.com
+Lesson 9 by Spree Tree - SpreeTree@hotmail.com
+Port to Linux by Lee Trager - nukem@users.xeroprj.org
+
+Requirements:
+A sound server(OSS or ALSA) ALSA is the default on all kernels 2.6+
+OpenAL - http://www.OpenAL.org
+libvorbis - http://www.xiph.org/ogg/vorbis/index.html
+
+
+*nix notes:
+I have only tested these sources on Linux but theoretically they should work on any *nix
