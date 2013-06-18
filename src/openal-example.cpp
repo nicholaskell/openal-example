@@ -3,7 +3,7 @@
  *
  * Copyright(C) Florian Fainelli <f.fainelli@gmail.com>
  */
- 
+
 /*
  * Modifications by Mark Hutcheson 2013
  *
@@ -12,7 +12,7 @@
  */
 #include "openal-example.h"
 
-int main(int argc, char **argv)
+int oldMain(int argc, char **argv)
 {
 	ALboolean enumeration;
 	const ALCchar *devices;
@@ -62,7 +62,7 @@ int main(int argc, char **argv)
 	alSource3f(source, AL_VELOCITY, 0, 0, 0);
 	alSourcei(source, AL_LOOPING, AL_FALSE);
 
-	loadWavFile("hai.wav", &buffer, &size, &freq, &format);	//Call our own function to load a WAV file, since alut is deprecated
+	loadWavFile("media/test.wav", &buffer, &size, &freq, &format);	//Call our own function to load a WAV file, since alut is deprecated
 
 	alSourcei(source, AL_BUFFER, buffer);
 

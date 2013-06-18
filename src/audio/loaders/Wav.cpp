@@ -4,6 +4,7 @@
 
 #include "openal-example.h"
 #include <stdio.h>
+#include "Wav.h"
 
 /*
  * Struct that holds the RIFF data of the Wave file.
