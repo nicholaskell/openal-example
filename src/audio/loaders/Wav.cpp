@@ -2,7 +2,6 @@
 // Source code retrieved from http://www.dunsanyinteractive.com/blogs/oliver/?p=72 on May 17, 2013 by Mark Hutcheson
 // Copyright (c) 2011 Oliver Plunkett
 
-#include "openal-example.h"
 #include <stdio.h>
 #include "Wav.h"
 
