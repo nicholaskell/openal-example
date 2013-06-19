@@ -16,20 +16,29 @@ namespace nk {
         public:
             Sound();
             enum States {STATE_PLAYING, STATE_STOPPED, STATE_PAUSED};
+            enum FileTypes {WAV,OGG};
             virtual ~Sound();
-            virtual bool load(std::string);
+            virtual bool load(std::string, FileTypes);
             virtual void play();
             virtual void pause();
             virtual void stop();
             virtual void rewind();
+            virtual States getState();
+
+            virtual void setPitch(float);
+            virtual void setGain(float);
+            virtual void setLooping(bool);
+            virtual void setPosition(float,float,float);
+            virtual void setVelocity(float,float,float);
 
 
 
         protected:
-            ALsizei size, freq;
-            ALenum format;
+//            ALsizei size, freq;
+//            ALenum format;
+//            void setState(ALenum);
             ALuint buffer, source;
-            ALint source_state;
+//            ALint source_state;
     };
 
 } /* namespace nk */

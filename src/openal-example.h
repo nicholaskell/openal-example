@@ -6,7 +6,7 @@
 
 #include <AL/al.h>
 #include <AL/alc.h>
+#include "audio/loaders/Wav.h"
 
-bool loadWavFile(const std::string filename, ALuint* buffer, ALsizei* size, ALsizei* frequency, ALenum* format);
 
 #endif

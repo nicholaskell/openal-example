@@ -62,7 +62,7 @@ int oldMain(int argc, char **argv)
 	alSource3f(source, AL_VELOCITY, 0, 0, 0);
 	alSourcei(source, AL_LOOPING, AL_FALSE);
 
-	loadWavFile("media/test.wav", &buffer, &size, &freq, &format);	//Call our own function to load a WAV file, since alut is deprecated
+	loadWavFile("media/test.wav", &buffer);	//Call our own function to load a WAV file, since alut is deprecated
 
 	alSourcei(source, AL_BUFFER, buffer);
 
